@@ -1,0 +1,28 @@
+{
+  "name": "minebatch",
+  "version": "0.0.0",
+  "description": "runs a series of commands on a Minecraft server",
+  "bin": {
+    "minebatch": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessehattabaugh/minebatch.git"
+  },
+  "keywords": [
+    "minecraft"
+  ],
+  "author": "Jesse Hattabaugh <arkanciscan@gmail.com>",
+  "license": "Artistic-2.0",
+  "bugs": {
+    "url": "https://github.com/jessehattabaugh/minebatch/issues"
+  },
+  "homepage": "https://github.com/jessehattabaugh/minebatch#readme",
+  "dependencies": {
+    "rcon": "^1.0.1",
+    "yargs": "^3.26.0"
+  }
+}

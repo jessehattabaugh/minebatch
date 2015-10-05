@@ -1,0 +1,3 @@
+say Hello
+say World
+give @r minecraft:cookie 1
