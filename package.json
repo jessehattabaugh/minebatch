@@ -1,7 +1,7 @@
 {
   "name": "minebatch",
-  "version": "0.0.0",
-  "description": "runs a series of commands on a Minecraft server",
+  "version": "0.0.1",
+  "description": "Runs a batch of commands on a Minecraft server over RCON",
   "bin": {
     "minebatch": "cli.js"
   },
@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/jessehattabaugh/minebatch#readme",
   "dependencies": {
+    "chalk": "^1.1.3",
+    "colors": "^1.1.2",
     "rcon": "^1.0.1",
-    "yargs": "^3.26.0"
+    "yargs": "^6.6.0"
   }
 }
