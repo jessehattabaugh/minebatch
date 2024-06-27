@@ -5,11 +5,15 @@ import { hideBin } from 'yargs/helpers';
 import Rcon from 'rcon';
 
 // configure the command line interface
-const { host, port, pass } = yargs(hideBin(process.argv))
+const { delay, host, port, pass } = yargs(hideBin(process.argv))
 	.epilog('for more information visit https://github.com/jessehattabaugh/minebatch')
 	.example(
-		'minebatch -p PASSWORD < example/commands.txt',
-		'pipe a file of commands to your locally hosted Minecraft Server',
+		'$0 < example/commands.txt',
+		'[Unix] pipe a file of commands to your locally hosted Minecraft Server',
+	)
+	.example(
+		'Get-Content example/commands.txt | $0',
+		'[Windows] pipe a file of commands to your locally hosted Minecraft Server',
 	)
 	.option('h', {
 		description: 'the address of the Minecraft server to connect to',
@@ -64,7 +68,7 @@ conn.on('auth', () => {
 	sendCommand();
 }).on('response', (res) => {
 	console.info(chalk.magenta('Server responded: ') + chalk.gray(res));
-	setTimeout(sendCommand, argv.delay);
+	setTimeout(sendCommand, delay);
 }).on('error', (msg) => {
 	console.error(chalk.red('Error: ') + chalk.gray(msg));
 	process.exit(1);
