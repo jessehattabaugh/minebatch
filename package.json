@@ -1,30 +1,21 @@
 {
-  "name": "minebatch",
-  "version": "0.0.1",
-  "description": "Runs a batch of commands on a Minecraft server over RCON",
-  "bin": {
-    "minebatch": "cli.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jessehattabaugh/minebatch.git"
-  },
-  "keywords": [
-    "minecraft"
-  ],
-  "author": "Jesse Hattabaugh <arkanciscan@gmail.com>",
-  "license": "Artistic-2.0",
-  "bugs": {
-    "url": "https://github.com/jessehattabaugh/minebatch/issues"
-  },
-  "homepage": "https://github.com/jessehattabaugh/minebatch#readme",
-  "dependencies": {
-    "chalk": "^1.1.3",
-    "colors": "^1.1.2",
-    "rcon": "^1.0.1",
-    "yargs": "^6.6.0"
-  }
+	"bin": {
+		"minebatch": "cli.js"
+	},
+	"dependencies": {
+		"chalk": "latest",
+		"colors": "latest",
+		"rcon": "latest",
+		"yargs": "latest"
+	},
+	"description": "Runs a batch of commands on a Minecraft server over RCON",
+	"devDependencies": {
+		"@types/node": "^20.14.9",
+		"@types/yargs": "latest",
+		"eslint": "latest"
+	},
+	"name": "minebatch",
+	"private": true,
+	"type": "module",
+	"version": "0.0.2"
 }
